@@ -1,0 +1,331 @@
+/****************Custom Properties*********************/
+
+:root {
+  --first-color: #d90062;
+  --first-alpha-color: rgba(217, 0, 98, 0.75);
+  --second-color: #14192d;
+  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --third-color: #501464;
+  --third-alpha-color: rgba(80, 20, 100, 0.75);
+  --white-color: #fff;
+  --gray-light-color: #f3f3f3;
+  --gray-color: #ccc;
+  --gray-dark-color: #666;
+  --black-color: #000;
+  --link-color: #509ee3;
+  --title-color: #333;
+  --text-color: #222;
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --font: "Raleway", sans-serif;
+  --max-width: 1200px;
+  --header-height: 4rem;
+}
+/***********************Reset**************************/
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
+  /* background-color: var(--first-color) !important; */
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6rem;
+}
+/*****************************Components***************************/
+/* .slider{
+height: 480px;
+
+} */
+/* .carousel {
+  height: 50vh !important;
+
+
+} */
+
+/* .carousel-inner .carousel-item{
+
+  height: 50vh !important;
+
+} */
+/*****************************Utilities***************************/
+
+
+/*Site style */
+
+body{
+	background-color: #f1f1f5 !important;
+}
+
+header{
+	background-color: #fff !important;
+}
+
+
+.top-bar{
+	background: #00933E;
+	color: #fff;
+	text-align: right;
+}
+
+.top-info, .top-redes
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.top-info p
+{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	padding-right: 10px;
+  margin: 16px 0;
+}
+
+.top-info p i
+{
+	margin-right: 5px;
+}
+
+.top-redes
+{
+	padding-top: 15px;
+}
+
+.top-redes a
+{
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.navbar{
+  background-color: #fff !important;
+}
+
+
+#carouselExampleCaptions .carousel-inner img{
+/* min-height: 50vh !important; */
+height: 40vh !important;
+object-fit:cover;
+
+
+
+
+}
+
+
+
+.departamentos, .departamentos2, .doctores, .contacto, footer {
+  padding: 40px 0;
+  background: #f1f1f5;
+  text-align: center;
+}
+
+.departamentos .dep, .departamentos2 .dep {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.departamentos h2, .doctores h2, .contacto h2, .departamentos2 h2 {
+  color: #00933E;
+  text-align: center;
+  font-size: 33px;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(0,147,62,0.4);
+  width: 430px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+} 
+
+
+
+@media screen and (max-width: 768px){
+  .departamentos h2, .doctores h2, .contacto h2, .departamentos2 h2 {
+    width: 70% !important;
+}
+
+}
+
+@media screen and (max-width: 480px){
+
+  .departamentos h2, .doctores h2, .contacto h2, .departamentos2 h2 {
+    width: 100% !important;
+}
+} 
+
+
+
+
+
+.departamentos .col-md-3:nth-child(1), .departamentos2 .col-md-3:nth-child(1) {
+  border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+
+
+.departamentos .col-md-3, .departamentos2 .col-md-3 {
+  padding: 0;
+  border: 1px solid rgba(0,0,0,0.1);
+  height: 170px;
+  position: relative;
+  border-bottom: none;
+  border-left: none;
+}
+
+.last-dep {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+
+.doctor-info{
+	background: #fff;
+	margin-bottom: 30px;
+	padding: 8px;
+}
+
+.dep-doctor{
+	margin: 0;
+	color: #00933E;
+}
+
+hr{
+	margin-bottom: 0;
+	margin-top: 0;
+	width:150px;
+}
+
+.doctor-nombre h3{
+	font-family: 'oswaldlight';
+	    font-size: 20px;
+}
+
+.thumb-doctor img{
+	max-width: 234px;
+	width: 100%;
+	transition: all 0.2s;
+	height: auto;
+}
+
+.thumb-doctor a:hover img{
+	opacity: 0.8;
+}
+
+.ver-doctores{
+	color: #000;
+	font-size: 22px;
+	text-transform: uppercase;
+	transition: all 0.2s;
+}
+
+.ver-doctores:hover{
+	color: #00933E;
+}
+
+.contacto h2{
+	margin-bottom: 0;
+}
+
+.direc-contact{
+	color: #00933E;
+	font-size: 20px; 
+	margin-top: 0;
+}
+
+.mapa-footer
+{
+	height: 400px;
+	overflow: hidden;
+}
+
+.mapa-footer iframe{
+	width: 100%;
+	height:100%;
+}
+
+footer{
+	padding: 15px;
+}
+
+.redes-sociales a{
+	display: inline-block;
+	margin: 0 9px;
+}
+
+.copyright a{
+	color: #000;
+}
+
+.copyright a:hover{
+	text-decoration: underline;
+}
+
+
+
+
